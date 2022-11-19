@@ -29,10 +29,25 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-12">
-                                            <form onsubmit="event.preventDefault();" class="callForm" post="/create_new_post">
+                                            <form onsubmit="event.preventDefault();" class="callForm"
+                                                post="/create_new_post">
                                                 <legend>Перетефонуйте мені</legend>
-                                                <input placeholder="Імʼя" type="text">
+                                                <label for="name">Введіть ваше Імʼя:</label>
+                                                <input id="name" placeholder="Імʼя" type="text">
                                                 <input placeholder="Номер телефону" type="text" required>
+                                                <textarea placeholder="Введіт опис:" rows="10"></textarea>
+                                                <select name="" id="">
+                                                    <option value="" selected disabled hidden>Choose here</option>
+                                                    <optgroup label="Choose val:">
+                                                        <option value="test">test</option>
+                                                        <option value="test">test2</option>
+                                                        <option value="test">test3</option>
+                                                    </optgroup>
+
+                                                    <option value="test">test4</option>
+                                                    <option value="test">tes3</option>
+                                                    <option value="test">test</option>
+                                                </select>
                                                 <button class="btn btn-warning mb-3" type="submit">Замовити</button>
                                             </form>
                                         </div>

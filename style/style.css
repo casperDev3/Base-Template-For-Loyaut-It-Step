@@ -13,7 +13,7 @@
     text-transform: uppercase;
 }
 
-.callForm input{
+.callForm input, textarea{
     width: 100%;
     padding: 12px;
     border-radius: 8px;
@@ -22,6 +22,18 @@
     background-color: rgb(223, 210, 146);
 }
 
-.callForm input::placeholder{
+.callForm input::placeholder, textarea::placeholder{
     color: #fff;
+}
+
+.callForm input:disabled{
+    background: #DFDFDF;
+    color: #909090 !important;
+}
+.callForm label{
+    cursor: pointer;
+}
+
+.callForm textarea{
+    min-width: 100%;
 }

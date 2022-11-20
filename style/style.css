@@ -1,3 +1,13 @@
-body{
-    background-color: #f00;
+@import url('../style/variables.css');
+
+.test, .test2, .test3, .test4{
+    min-height: 100px;
+    min-width: 100%;
+}
+
+.test, .test3{
+    background-color: var(--primary-color);
+}
+.test2, .test4{
+    background-color: var(--secondry-color);
 }
